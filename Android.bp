@@ -5475,36 +5475,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libdisplayqos.so",
             ],
             shared_libs: [
-                "libdisplaydebug",
-                "libtinyxml2_1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdisplayskuutils",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdisplayskuutils.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libdisplaydebug",
                 "libc++",
                 "libc",
                 "libm",
@@ -7922,8 +7892,6 @@ cc_prebuilt_library_shared {
                 "libsdmutils",
                 "libdisplayqos",
                 "libsdm-color",
-                "libdisplayskuutils",
-                "libtinyxml2_1",
                 "libc++",
                 "libc",
                 "libm",
